@@ -1,11 +1,37 @@
-Result of the multiple Oddonacci linear recursion:
-5
-105
-2209
-46499
-978793
-20603361
-433695873
-9129195487
+Result of the Oddonacci multiple recursion
 
-The run time is: 0.4808948665166667 M 28.853691991 S 28853.691991 ms.
+************************
+Oddonacci(5) :
+Result : 5
+Built-in time : 3951 ms
+
+************************
+Oddonacci(10) :
+Result : 105
+Built-in time : 16407 ms
+
+************************
+Oddonacci(15) :
+Result : 2209
+Built-in time : 293626 ms
+
+************************
+Oddonacci(20) :
+Result : 46499
+Built-in time : 1230548 ms
+
+************************
+Oddonacci(25) :
+Result : 978793
+Built-in time : 6504728 ms
+
+************************
+Oddonacci(30) :
+Result : 20603361
+Built-in time : 99824960 ms
+
+************************
+Oddonacci(35) :
+Result : 433695873
+Built-in time : 1905759301 ms
+

@@ -1,5 +1,5 @@
 import java.io.*;
-import java.util.*;
+
 public class Main {
     public static long oddonacciMultiple(int n){
         if(n==0){
@@ -16,16 +16,23 @@ public class Main {
         PrintWriter writer=null;
         try{
             writer = new PrintWriter(new FileOutputStream("OddoOut.txt"));
-            writer.println("Result of the Oddonacci multiple recursion:");
-            String x="";
-            long startTimeMultiple = System.nanoTime();
-            for (int i=5; i<=40;i=i+5){
-                x += (oddonacciMultiple(i) + "\n");
+            writer.println("Result of the Oddonacci multiple recursion");
+            writer.println();
+
+            long startTimeMultiple=0;
+            long endTimeMultiple = 0;
+            long result=0;
+
+            for (int i =5 ; i<=35 ; i+=5){
+                writer.println("************************");
+                writer.println("Oddonacci("+i+") :");
+                startTimeMultiple = System.nanoTime();
+                result=oddonacciMultiple(i);
+                endTimeMultiple = System.nanoTime();
+                writer.println("Result : " + result);
+                writer.println("Built-in time : " +(endTimeMultiple -startTimeMultiple) + " ms");
+                writer.println();
             }
-            long endTimeMultiple = System.nanoTime();
-            writer.println(x);
-            long durationMultiple = endTimeMultiple-startTimeMultiple;
-            writer.println("The run time is: " + durationMultiple/(Math.pow(10,6)) + " ms.");
             writer.close();
         }catch(IOException e){
             System.out.println("A problem occurred.");
