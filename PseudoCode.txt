@@ -1,0 +1,13 @@
+1- Pseudo Code of Multiple Recursion :
+
+let n be integer
+IF n=0
+    return 0
+ELSE IF n=1 OR n=2 OR n=3
+    return 1
+ELSE
+    return ADD recursive call of n-1 , recursive call of n-2 and recursive call of n-3
+
+
+2- Pseudo Code of Linear Recursion :
+
