@@ -10,3 +10,8 @@ c) Do any of the previous two algorithms use tail recursion? Why or why not? Exp
         Can a tail-recursive version of Oddonacci calculator be designed?
                i. If yes; provide the idea of how this can be achieved. Bonus mark will be given if you implement this tail-recursive solution.
                ii. If no, explain clearly why such tail-recursive algorithm is infeasible.
+
+No, since the multiple recursion has a computation (sum) of 3 recursive calls. A tail recursion
+should only be a recursion call as its last statement without any further computation.
+
+Yes,

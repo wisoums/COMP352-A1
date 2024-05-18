@@ -52,18 +52,18 @@ public class Main {
             writer.println("Result of the Oddonacci multiple recursion");
             writer.println();
 
-            long startTimeMultiple=0;
-            long endTimeMultiple = 0;
+            long startTime =0;
+            long endTime = 0;
             long result=0;
 
-            for (int i =5 ; i<=35 ; i+=5){
+            for (int i =5 ; i<=200 ; i+=5){
                 writer.println("************************");
                 writer.println("OddonacciMultiple("+i+") :");
-                startTimeMultiple = System.nanoTime();
+                startTime = System.nanoTime();
                 result=oddonacciMultiple(i);
-                endTimeMultiple = System.nanoTime();
+                endTime = System.nanoTime();
                 writer.println("Result : " + result);
-                writer.println("Built-in time : " +(endTimeMultiple -startTimeMultiple) + " ms");
+                writer.println("Built-in time : " +(endTime - startTime) + " ms");
                 writer.println();
             }
             writer.println();
@@ -72,14 +72,14 @@ public class Main {
             writer.println("Result of the Oddonacci linear recursion");
             writer.println();
 
-            for (int i =5 ; i<=35 ; i+=5){
+            for (int i =5 ; i<=200 ; i+=5){
                 writer.println("************************");
                 writer.println("OddonacciLinear("+i+") :");
-                startTimeMultiple = System.nanoTime();
-                result=oddonacciMultiple(i);
-                endTimeMultiple = System.nanoTime();
+                startTime = System.nanoTime();
+                result=oddonacciLinear(i)[0];
+                endTime = System.nanoTime();
                 writer.println("Result : " + result);
-                writer.println("Built-in time : " +(endTimeMultiple -startTimeMultiple) + " ms");
+                writer.println("Built-in time : " +(endTime - startTime) + " ms");
                 writer.println();
             }
             writer.close();
