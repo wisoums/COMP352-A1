@@ -33,19 +33,16 @@ the fact that it doesn't do any redundant calculations.
 |  40  |        38372.595284          |         1.449602          |
 
 
-The Linear recursion makes only one recursion call each time, unlike the multiple recusion that
-makes 3 recusion calls.
-
-
-
-
 c) Do any of the previous two algorithms use tail recursion? Why or why not? Explain your answer.
    If your answer is “No” then:
         Can a tail-recursive version of Oddonacci calculator be designed?
                i. If yes; provide the idea of how this can be achieved. Bonus mark will be given if you implement this tail-recursive solution.
                ii. If no, explain clearly why such tail-recursive algorithm is infeasible.
 
-No, since the multiple recursion has a computation (sum) of 3 recursive calls. A tail recursion
-should only be a recursion call as its last statement without any further computation.
+No, since the multiple recursion has a computation (sum) of 3 recursive calls as its last
+statement and the linear recursion, a computation. A tail recursion should only be a
+recursion call as its last statement without any further computation.
+
+To make a tail recursion, a helper method should be used.
 
 Yes,
