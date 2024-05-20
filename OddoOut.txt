@@ -3,42 +3,42 @@ Result of the Oddonacci multiple recursion
 ************************
 OddonacciMultiple(5) :
 Result : 5
-Built-in time : 0.004235 ms
+Built-in time : 0.007759 ms
 
 ************************
 OddonacciMultiple(10) :
 Result : 105
-Built-in time : 0.022321 ms
+Built-in time : 0.01534 ms
 
 ************************
 OddonacciMultiple(15) :
 Result : 2209
-Built-in time : 0.341961 ms
+Built-in time : 0.278466 ms
 
 ************************
 OddonacciMultiple(20) :
 Result : 46499
-Built-in time : 0.938342 ms
+Built-in time : 2.408876 ms
 
 ************************
 OddonacciMultiple(25) :
 Result : 978793
-Built-in time : 4.774952 ms
+Built-in time : 8.357968 ms
 
 ************************
 OddonacciMultiple(30) :
 Result : 20603361
-Built-in time : 88.021771 ms
+Built-in time : 285.100812 ms
 
 ************************
 OddonacciMultiple(35) :
 Result : 433695873
-Built-in time : 1515.462525 ms
+Built-in time : 4603.989465 ms
 
 ************************
 OddonacciMultiple(40) :
 Result : 9129195487
-Built-in time : 38372.595284 ms
+Built-in time : 48826.666986 ms
 
 
 
@@ -47,42 +47,42 @@ Result of the Oddonacci linear recursion
 ************************
 OddonacciLinear(5) :
 Result : 5
-Built-in time : 0.337812 ms
+Built-in time : 0.00377 ms
 
 ************************
 OddonacciLinear(10) :
 Result : 105
-Built-in time : 0.597741 ms
+Built-in time : 0.003622 ms
 
 ************************
 OddonacciLinear(15) :
 Result : 2209
-Built-in time : 0.789705 ms
+Built-in time : 0.009244 ms
 
 ************************
 OddonacciLinear(20) :
 Result : 46499
-Built-in time : 0.99309 ms
+Built-in time : 0.004421 ms
 
 ************************
 OddonacciLinear(25) :
 Result : 978793
-Built-in time : 1.29977 ms
+Built-in time : 0.012705 ms
 
 ************************
 OddonacciLinear(30) :
 Result : 20603361
-Built-in time : 1.426678 ms
+Built-in time : 0.017559 ms
 
 ************************
 OddonacciLinear(35) :
 Result : 433695873
-Built-in time : 1.285329 ms
+Built-in time : 0.011692 ms
 
 ************************
 OddonacciLinear(40) :
 Result : 9129195487
-Built-in time : 1.449602 ms
+Built-in time : 0.011386 ms
 
 
 
@@ -91,40 +91,40 @@ Result of the Oddonacci Tail recursion
 ************************
 OddonacciTail(5) :
 Result : 5
-Built-in time : 0.001429 ms
+Built-in time : 0.011836 ms
 
 ************************
 OddonacciTail(10) :
 Result : 105
-Built-in time : 0.004126 ms
+Built-in time : 0.001653 ms
 
 ************************
 OddonacciTail(15) :
 Result : 2209
-Built-in time : 0.005698 ms
+Built-in time : 0.001663 ms
 
 ************************
 OddonacciTail(20) :
 Result : 46499
-Built-in time : 0.004336 ms
+Built-in time : 0.001951 ms
 
 ************************
 OddonacciTail(25) :
 Result : 978793
-Built-in time : 0.003052 ms
+Built-in time : 0.003361 ms
 
 ************************
 OddonacciTail(30) :
 Result : 20603361
-Built-in time : 0.006387 ms
+Built-in time : 0.003408 ms
 
 ************************
 OddonacciTail(35) :
 Result : 433695873
-Built-in time : 0.039353 ms
+Built-in time : 0.004648 ms
 
 ************************
 OddonacciTail(40) :
 Result : 9129195487
-Built-in time : 0.005047 ms
+Built-in time : 0.006667 ms
 

@@ -43,6 +43,27 @@ No, since the multiple recursion has a computation (sum) of 3 recursive calls as
 statement and the linear recursion, a computation. A tail recursion should only be a
 recursion call as its last statement without any further computation.
 
-To make a tail recursion, a helper method should be used.
+Yes, it's possible to design a tail recursive version. To make it, a helper method should
+be used. The tail recursive method would have n as a parameter and would cover the base case of
+(n=1 and n=2) that would return 1 (n=3 is covered in the helper method). The last statement
+should be a recursive call to the helper method. The helper method has n, a, b, c as
+parameters. n is the same as in the tail recursive method. The parameter a is the value
+at n-3, b is the value at n-2 and c is the value at n-1. The helper method covers the base
+case of n=3, where it would return c, so it doesn't continue infinitely. The helper methods
+returns a recursive call to the previous n, since it's reducing each time, so n-1, and a becomes b,
+b becomes c and c becomes the sum of a+b+c (same idea as what is done after the recursive
+call in the linear recursion), since the Oddonacci principle is to add the 3 previous
+values to get the new one.
 
-Yes,
+It should look like this :
+
+OddonacciTail ( let n be an integer)
+    IF n=1 OR n=2
+        Return 1
+    Return  Call to helper recursive method (n,1,1,1)
+
+
+oddonacciTailHelper(let n be an integer, let a be a long, let b be a long, let c be a long) {
+    IF n = 3
+        Return c
+    Return Recursive Call  (n - 1, b, c, a + b + c)

@@ -1,6 +1,6 @@
 1- Pseudo Code of Multiple Recursion :
 
-let n be integer
+let n be integer and parameter of the method
 IF n=0
     return 0
 ELSE IF n=1 OR n=2 OR n=3
@@ -10,4 +10,21 @@ ELSE
 
 
 2- Pseudo Code of Linear Recursion :
+
+let n be integer and parameter of the method
+
+Let A be an array of type long with a length of 3
+Let i, j and k be integers initialized to zero
+
+IF n = 3 OR n = 2 OR n == 1
+    Set the 3 first position of the array A to 1
+    Return updated array A
+
+ELSE
+    A = Recursive call with n-1
+    STORE the values of the first 3 elements of the array in i,j,k
+
+    A[0] = i + j + A[2], A[1] = i, A[2] = j;
+    Return updated array A
+
 

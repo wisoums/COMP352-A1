@@ -1,6 +1,7 @@
 import java.io.*;
 
 public class Main {
+    //Multiple recursion
     public static long oddonacciMultiple(int n){
         if(n==0){
             return 0;
@@ -12,6 +13,8 @@ public class Main {
             return (oddonacciMultiple(n-1) + oddonacciMultiple(n-2) + oddonacciMultiple(n-3));
         }
     }
+
+    //Linear recursion
     public static long[] oddonacciLinear(int n)
     {
         long[] A = new long[3]; //initializing returned array
@@ -19,25 +22,20 @@ public class Main {
 
         if (n == 3 || n == 2 || n == 1) //1st 3 positions are 1 (base case)
         {
-            i=1;
-            j=1;
-            k=1;
-
-            A[0] = i; A[1] = j; A[2]=k; //setting those values in the array
-            System.out.print(k + " " + j + " " + i + " ");
+            A[0] = 1; A[1] = 1; A[2]=1; //setting those values in the array
 
             return (A);	//returning the updated array
         }
         else
         {
             A = oddonacciLinear(n - 1); //recursive call
+            //Keep the values of the array before they get changed
             i = A[0];
             j = A[1];
             k = A[2];
 
-            System.out.print((i+j+k) + " ");
-
-            A[0] = i + j + A[2];
+            //Update the new values
+            A[0] = i + j + k;
             A[1] = i;
             A[2] = j;
 
@@ -45,13 +43,14 @@ public class Main {
         }
     }
 
+    //Tail recursion
     public static long oddonacciTail(int n) {
         if (n == 0) {
             return 0;
-        } else if (n == 1 || n == 2 || n == 3) {
+        } else if (n == 1 || n == 2) {
             return 1;
         }
-        return oddonacciTailHelper(n, 1, 1, 1);
+        return oddonacciTailHelper(n,1,1,1);
     }
 
     private static long oddonacciTailHelper(int n, long a, long b, long c) {
@@ -61,6 +60,7 @@ public class Main {
         return oddonacciTailHelper(n - 1, b, c, a + b + c);
     }
 
+    //Results
     public static void displayResultFile(){
         PrintWriter writer=null;
         try{
@@ -73,7 +73,7 @@ public class Main {
             long endTime = 0;
             long result=0;
 
-            for (int i =5 ; i<=40 ; i+=5){
+            for (int i = 5 ; i<=40 ; i+=5){
                 writer.println("************************");
                 writer.println("OddonacciMultiple("+i+") :");
                 startTime = System.nanoTime();
