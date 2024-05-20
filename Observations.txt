@@ -2,6 +2,40 @@ b) Briefly explain why the first algorithm is of exponential complexity and the 
 of linear complexity (more specifically, how the second algorithm resolves some specific
 bottleneck(s) of the first algorithm).
 
+As the results shows, we can see that the built-in time for each of the two methods grows differently.
+At first (n=5), the multiple recursion seems faster, but as the parameter n grows, the time
+increases exponentially. On the other hand, the linear recursion is a lot more stable with
+a linear built-in time growth.
+
+For instance, in the multiple recursion, when we observe the built-in growth from n=30 to n=30,
+it goes from a 4.774952ms built-in time to a 88.021771ms built-in time. In contrast, the
+linear recursion shows a much smaller and constant increase in time, going from 1.299770 ms
+at n=25 to 1.426678 ms at n=30.
+
+The reason why the multiple recursion is of exponential complexity is that it makes 3 recursive calls.
+This leads to making 3 more calls and so on and so on, which results in a fast increase in the
+number of recursive calls as n grows. Since each new value of n results in a tripling of the number of
+calls, the time complexity is exponential, O(3^n). The linear recursion is more efficient, since it
+only makes one recursive call each time. It doesn't recalculate the same already computed values,
+but instead it uses previously computed values to find the next one. The resolved bottleneck is
+the fact that it doesn't do any redundant calculations.
+
+
+|  n   | OddonacciMultiple Time (ms) | OddonacciLinear Time (ms) |
+|------|------------------------------|---------------------------|
+|  5   |          0.004235            |         0.337812          |
+|  10  |          0.022321            |         0.597741          |
+|  15  |          0.341961            |         0.789705          |
+|  20  |          0.938342            |         0.993090          |
+|  25  |          4.774952            |         1.299770          |
+|  30  |         88.021771            |         1.426678          |
+|  35  |        1515.462525           |         1.285329          |
+|  40  |        38372.595284          |         1.449602          |
+
+
+The Linear recursion makes only one recursion call each time, unlike the multiple recusion that
+makes 3 recusion calls.
+
 
 
 

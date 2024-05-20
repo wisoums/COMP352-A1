@@ -1,0 +1,130 @@
+Result of the Oddonacci multiple recursion
+
+************************
+OddonacciMultiple(5) :
+Result : 5
+Built-in time : 0.004235 ms
+
+************************
+OddonacciMultiple(10) :
+Result : 105
+Built-in time : 0.022321 ms
+
+************************
+OddonacciMultiple(15) :
+Result : 2209
+Built-in time : 0.341961 ms
+
+************************
+OddonacciMultiple(20) :
+Result : 46499
+Built-in time : 0.938342 ms
+
+************************
+OddonacciMultiple(25) :
+Result : 978793
+Built-in time : 4.774952 ms
+
+************************
+OddonacciMultiple(30) :
+Result : 20603361
+Built-in time : 88.021771 ms
+
+************************
+OddonacciMultiple(35) :
+Result : 433695873
+Built-in time : 1515.462525 ms
+
+************************
+OddonacciMultiple(40) :
+Result : 9129195487
+Built-in time : 38372.595284 ms
+
+
+
+Result of the Oddonacci linear recursion
+
+************************
+OddonacciLinear(5) :
+Result : 5
+Built-in time : 0.337812 ms
+
+************************
+OddonacciLinear(10) :
+Result : 105
+Built-in time : 0.597741 ms
+
+************************
+OddonacciLinear(15) :
+Result : 2209
+Built-in time : 0.789705 ms
+
+************************
+OddonacciLinear(20) :
+Result : 46499
+Built-in time : 0.99309 ms
+
+************************
+OddonacciLinear(25) :
+Result : 978793
+Built-in time : 1.29977 ms
+
+************************
+OddonacciLinear(30) :
+Result : 20603361
+Built-in time : 1.426678 ms
+
+************************
+OddonacciLinear(35) :
+Result : 433695873
+Built-in time : 1.285329 ms
+
+************************
+OddonacciLinear(40) :
+Result : 9129195487
+Built-in time : 1.449602 ms
+
+
+
+Result of the Oddonacci Tail recursion
+
+************************
+OddonacciTail(5) :
+Result : 5
+Built-in time : 0.001429 ms
+
+************************
+OddonacciTail(10) :
+Result : 105
+Built-in time : 0.004126 ms
+
+************************
+OddonacciTail(15) :
+Result : 2209
+Built-in time : 0.005698 ms
+
+************************
+OddonacciTail(20) :
+Result : 46499
+Built-in time : 0.004336 ms
+
+************************
+OddonacciTail(25) :
+Result : 978793
+Built-in time : 0.003052 ms
+
+************************
+OddonacciTail(30) :
+Result : 20603361
+Built-in time : 0.006387 ms
+
+************************
+OddonacciTail(35) :
+Result : 433695873
+Built-in time : 0.039353 ms
+
+************************
+OddonacciTail(40) :
+Result : 9129195487
+Built-in time : 0.005047 ms
+
