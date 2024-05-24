@@ -57,13 +57,17 @@ values to get the new one.
 
 It should look like this :
 
-OddonacciTail ( let n be an integer)
-    IF n=1 OR n=2
-        Return 1
-    Return  Call to helper recursive method (n,1,1,1)
+Algorithm OddonacciTail (n)
+    Input: An integer n=0
+    Output: value of the nth number in the oddonacci series
+    if n=1 or n=2 then
+        return 1
+    return oddonacciTailHelper(n,1,1,1)
 
 
-oddonacciTailHelper(let n be an integer, let a be a long, let b be a long, let c be a long) {
-    IF n = 3
-        Return c
-    Return Recursive Call  (n - 1, b, c, a + b + c)
+Algorithm oddonacciTailHelper(n, a, b, c)
+    Input: An integer n=0, a long a=0, a long b=0, a long c=0
+    Output: value of the 0 to nth number in the oddonacci series
+    if n = 3 then
+        return c
+    return oddonacciTailHelper(n - 1, b, c, a + b + c)

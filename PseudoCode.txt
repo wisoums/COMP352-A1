@@ -1,30 +1,40 @@
 1- Pseudo Code of Multiple Recursion :
 
-let n be integer and parameter of the method
-IF n=0
-    return 0
-ELSE IF n=1 OR n=2 OR n=3
-    return 1
-ELSE
-    return ADD recursive call of n-1 , recursive call of n-2 and recursive call of n-3
+Algorithm multipleRecursion(n)
+    Input: An integer n=0
+    Output: Value of the nth number in the oddonacci series
+    if n=0 then
+        return 0
+    else if n=1 OR n=2 OR n=3 then
+        return 1
+    ELSE
+        return multipleRecursion(n-1) + multipleRecursion(n-2) multipleRecursion(n-3)
 
 
 2- Pseudo Code of Linear Recursion :
 
-let n be integer and parameter of the method
+Algorithm linearRecursion(n)
+    Input: An integer n=0
+    Output: Value of the nth number in the oddonacci series
 
-Let A be an array of type long with a length of 3
-Let i, j and k be integers initialized to zero
+    Let A be an array of type long with a length of 3
+    Let i, j and k be integers initialized to zero
 
-IF n = 3 OR n = 2 OR n == 1
-    Set the 3 first position of the array A to 1
-    Return updated array A
+    if n = 3 or n = 2 or n == 1 then
+        A[0]=1
+        A[1]=1
+        A[2]=1
+        return A
 
-ELSE
-    A = Recursive call with n-1
-    STORE the values of the first 3 elements of the array in i,j,k
+    else
+        A = linearRecursion(n-1)
+        i=A[0]
+        j=A[1]
+        k=A[2]
 
-    A[0] = i + j + A[2], A[1] = i, A[2] = j;
-    Return updated array A
+        A[0] = i + j + A[2]
+        A[1] = i
+        A[2] = j;
+        Return A
 
 
